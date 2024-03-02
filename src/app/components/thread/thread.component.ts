@@ -15,19 +15,16 @@ export class ThreadComponent {
 
   formDisable: boolean = true
 
-
   textAreaCounter(e: any) {
-
     this.count = e.target.value.trim().length
     this.threadInputText = e.target.value.trim()
 
-    if (e.target.value.trim().length === 0 || e.target.value.trim().length > 100) {
+    if (e.target.value.trim().length === 0 || this.count > 100) {
       this.formDisable = true
     } else {
       this.formDisable = false
     }
   }
-
   SubmitThread() {
 
 
