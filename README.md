@@ -1,27 +1,41 @@
-# DirectiveTrial
+# Auto resize directive for <u>Angular textarea</u>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
+## Description
 
-## Development server
+<b>ngx-auto-resize</b> is an Angular package that provides a directive for auto-resizing textarea element in Angular 17 or above projects.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Installation
 
-## Code scaffolding
+You can install the ngx-autoresize package using npm:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+npm install ngx-auto-resize
+```
 
-## Build
+## How to use
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### step 1: importing the directive
 
-## Running unit tests
+Just import the directive in TS file of the component like this.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```javascript
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [AutoResize],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
+})
+```
 
-## Running end-to-end tests
+<br/>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### step 2: Using the directive
 
-## Further help
+```html
+<textarea AutoResize></textarea>
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<br/>
+
+#### And you are all set. ❤️‍🔥
